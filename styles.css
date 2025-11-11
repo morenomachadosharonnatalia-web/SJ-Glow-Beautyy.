@@ -1,0 +1,211 @@
+body, html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('fondo.png') center center no-repeat;
+  background-size: cover;
+  color: #000000;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(243, 169, 239, 0.7);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(235, 187, 241, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.presentacion img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.productos {
+  margin-top: 30px;
+  background-color: rgba(255, 216, 248, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+
+  display: block; /* 🔹 CAMBIO: evita que herede el flex del body */
+}
+
+.grid {
+  display: flex; /* 🔹 CAMBIO: muestra los productos en horizontal */
+  justify-content: center;
+  flex-wrap: wrap; /* 🔹 CAMBIO: permite que bajen si no caben */
+  gap: 20px; /* 🔹 CAMBIO: espacio entre productos */
+}
+
+.producto {
+  background-color: rgba(247, 161, 221, 0.8);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* 🔹 agregado para efecto visual */
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.producto:hover { /* 🔹 nuevo efecto al pasar el cursor */
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(247, 161, 221, 0.9);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(183, 157, 212, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+button {
+  background-color: rgba(235, 187, 241, 0.85);
+  color: rgb(3, 3, 3);
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#redes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #fa8cc9);
+}
+
+.youtube {
+  background: #fa8cc9;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 80%;
+  }
+}
+
+.producto button {
+  background-color: #f48acb;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: #e062a0;
+}
+
+.carrito {
+  margin-top: 40px;
+  background-color: rgba(255, 216, 248, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+  margin-top: 15px;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(247, 161, 221, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.item-carrito button {
+  background-color: #f48acb;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item-carrito button:hover {
+  background-color: #e062a0;
+}
+
+#confirmarCompra {
+  background-color: #f48acb;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#confirmarCompra:hover {
+  background-color: #e062a0;
+  transform: scale(1.05);
+}
+
+#mensajeCompra {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #7a007a;
+  font-size: 18px;
+}
+

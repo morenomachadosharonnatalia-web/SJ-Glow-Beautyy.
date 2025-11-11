@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJ Glow Beauty</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="logoo.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <h1>SJ Glow Beauty</h1>
+    <p>Tu espacio para el maquillaje y la belleza</p>
+  </header>
+
+  <main>
+    <section class="presentacion">
+      <img src="SJ.png" alt="Imagen de maquillaje">
+      <div>
+        <h2>Bienvenida</h2>
+        <p>Descubre tips, productos y tutoriales para resaltar tu belleza natural.</p>
+      </div>
+    </section>
+
+    <section class="productos">
+      <h2>Productos Destacados</h2>
+
+      <div class="grid">
+        <div class="producto" data-nombre="Labial Mate" data-precio="20000">
+          <img src="MAC.jpg" alt="Labial Mate">
+          <h3>Labial Mate</h3>
+          <p>Color intenso y duración prolongada.</p>
+          <p>$20.000</p>
+          <button class="agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" data-nombre="Paleta Dreams" data-precio="35000">
+          <img src="SOMBRAS.jpg" alt="Paleta Dreams">
+          <h3>Paleta Dreams</h3>
+          <p>Sombras cálidas con brillo sutil.</p>
+          <p>$35.000</p>
+          <button class="agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" data-nombre="Iluminador" data-precio="15000">
+          <img src="Iuminador.webp" alt="Iluminador">
+          <h3>Iluminador</h3>
+          <p>Un brillo perfecto para tu look.</p>
+          <p>$15.000</p>
+          <button class="agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" data-nombre="Rubor" data-precio="25000">
+          <img src="Ruborr.webp" alt="Rubor">
+          <h3>Rubor</h3>
+          <p>Un Color perfecto para tu look.</p>
+          <p>$25.000</p>
+          <button class="agregar">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="carrito">
+    <h2>🛍️ Tu carrito</h2>
+    <div id="lista-carrito"></div>
+    <p id="total">Total: $0</p>
+    <button id="vaciar">Vaciar carrito</button>
+    <button id="confirmarCompra">Confirmar compra</button> 
+    <p id="mensajeCompra"></p> 
+  </section>
+
+    <section id="redes">
+    <a href="https://www.instagram.com/" target="_blank" class="btn instagram">Instagram</a>
+    <a href="https://www.youtube.com/" target="_blank" class="btn youtube">YouTube</a>
+  </section>
+
+  <footer>
+    <p>© 2025 SJ Glow Beauty - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
